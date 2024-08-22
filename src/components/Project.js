@@ -12,29 +12,48 @@ const buttonTexts = [
   "Storybook",
   "Git",
 ];
+const projectTexts = [
+  {
+    img: "ProjectUBcab.png",
+    title: "UBCab",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+  },
+  {
+    img: "MentorHub.png",
+    title: "Mentorhub",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+  },
+  {
+    img: "Itoim.png",
+    title: "iToim",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+  },
+];
 
 const Project = () => {
   return (
     <div className="shadow-md rounded-lg ">
-      <img src="ProjectUBcab.png" className="p-8 bg-gray-50" />
-      <div className="p-8">
-        <p className="text-lg font-semibold pb-6">UBCab</p>
-        <p className="pb-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec
-          urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in
-          faucibus orci luctus et ultrices posuere cubilia curae.
-        </p>
-        <div className="flex flex-wrap gap-2 pb-6">
-          {buttonTexts.map((buttonText) => {
-            return (
-              <div className="">
-                <TagButton buttonText={buttonText} />
+      {projectTexts.map((projectText) => {
+        return (
+          <>
+            <img src={projectText.img} className="p-8 bg-gray-50" />
+            <div className="p-8">
+              <p className="text-lg font-semibold pb-6">{projectText.title}</p>
+              <p className="pb-6">{projectText.text} </p>
+              <div className="flex flex-wrap gap-2 pb-6">
+                {buttonTexts.map((buttonText) => {
+                  return (
+                    <div>
+                      <TagButton buttonText={buttonText} />
+                    </div>
+                  );
+                })}
               </div>
-            );
-          })}
-        </div>
-        <img src="ShareIcon.svg" className="pb-6" />
-      </div>
+              <img src="ShareIcon.svg" />
+            </div>
+          </>
+        );
+      })}
     </div>
   );
 };

@@ -4,6 +4,8 @@ import AboutMe from "@/components/AboutMe";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Work from "@/components/Work";
+import GetInTouch from "@/components/GetInTouch";
+import Footer from "@/components/Footer";
 
 const PersonalPortfolio = () => {
   return (
@@ -14,6 +16,8 @@ const PersonalPortfolio = () => {
       <Skills />
       <Experience />
       <Work />
+      <GetInTouch />
+      <Footer />
     </div>
   );
 };
