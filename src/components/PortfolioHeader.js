@@ -8,7 +8,7 @@ const PortfolioHeader = () => {
   return (
     <div className="flex justify-between items-center m-4 xl:pl-8 xl:pr-8">
       <h1 className="leading-9	font-bold text-3xl ">TOM</h1>
-      <div className="hidden xl:flex gap-6 justify-center items-center ">
+      <div className="hidden lg:flex gap-6 justify-center items-center ">
         <p className="text-base text-gray-600">About</p>
         <p className="text-base text-gray-600">Work</p>
         <p className="text-base text-gray-600">Testimonials</p>
@@ -19,7 +19,7 @@ const PortfolioHeader = () => {
           Download CV
         </button>
       </div>
-      <img src="burger-menu-svgrepo-com.svg" className="w-6 h-6 xl:hidden" />
+      <img src="burger-menu-svgrepo-com.svg" className="w-6 h-6 lg:hidden" />
     </div>
   );
 };

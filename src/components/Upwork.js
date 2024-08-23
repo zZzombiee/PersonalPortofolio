@@ -28,18 +28,21 @@ const listTexts = [
 const Upwork = () => {
   return (
     <div>
-      {listTexts.map((listText) => {
+      {listTexts.map((listText, index) => {
         return (
-          <div className="m-4 p-8 rounded-xl bg-white shadow-md xl:flex xl:justify-between xl:w-3/4 xl:m-auto xl:mb-12">
-            <div className="xl:flex xl:items-start xl:w-1/3">
+          <div
+            key={index}
+            className="m-4 p-8 rounded-lg bg-white shadow-md lg:flex lg:justify-between lg:w-3/4 lg:m-auto lg:mb-12"
+          >
+            <div className="lg:flex lg:items-start lg:w-1/3">
               <img src="UpworkIcon.svg" className="mb-4" />
             </div>
-            <div className="xl:order-1 xl:w-1/3 xl:flex xl:justify-end">
+            <div className="lg:order-1 lg:w-1/3 lg:flex lg:justify-end">
               <p className="mb-4 font-normal text-base text-gray-700 ">
                 {listText.date}
               </p>
             </div>
-            <div className="xl:w-6/12">
+            <div className="lg:w-6/12">
               <p className="mb-4 font-semibold text-lg text-gray-900">
                 {listText.title}
               </p>

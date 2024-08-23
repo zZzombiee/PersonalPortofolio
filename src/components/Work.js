@@ -28,13 +28,14 @@ const Work = () => {
     <div className=" p-4 pb-16">
       <Button buttonText="Work" />
       <Title title="Some of the noteworthy projects I have built:" />
-      {projectTexts.map((projectText) => {
+      {projectTexts.map((projectText, index) => {
         return (
           <Project
+            key={index}
             text={projectText.text}
             img={projectText.img}
             title={projectText.title}
-            key={projectText.key}
+            key2={projectText.key}
           />
         );
       })}

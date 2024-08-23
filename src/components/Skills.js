@@ -25,10 +25,13 @@ const Skills = () => {
     <div>
       <Button buttonText="Skills" />
       <Title title="The skills, tools and technologies I am really good at:" />
-      <div className="grid grid-cols-3 place-content-center mb-16 xl:grid-cols-8 xl:mt-12">
-        {iconDatas.map((icondata) => {
+      <div className="grid grid-cols-3 place-content-center mb-16 lg:grid-cols-5 xl:grid-cols-8 xl:mt-12">
+        {iconDatas.map((icondata, index) => {
           return (
-            <div className="flex flex-col items-center mb-4 gap-2 h-24">
+            <div
+              className="flex flex-col items-center mb-4 gap-2 h-24"
+              key={index}
+            >
               <img src={icondata.icon} />
               <p className="text-gray-600 text-base font-normal">
                 {icondata.name}

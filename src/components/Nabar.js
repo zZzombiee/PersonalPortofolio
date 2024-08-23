@@ -1,11 +1,14 @@
 const Nabar = () => {
   return (
-    <div className="m-4 xl:flex xl:gap-12 xl:flex-row-reverse">
-      <div className="xl:w-1/2">
-        <img src="image.png" className="h-64 w-60 m-auto mt-16 xl:mr-8" />
+    <div className="m-4 lg:flex lg:gap-12 lg:flex-row-reverse">
+      <div className="lg:w-1/2">
+        <img
+          src="image.png"
+          className="h-[280px] w-[240px] m-auto mt-16 lg:mr-8 lg:h-[320px] lg:w-[280px] object-cover"
+        />
       </div>
-      <div className="xl:w-1/2 xl:ml-8">
-        <h1 className="font-sans font-semibold text-4xl mt-12 xl:text-6xl">
+      <div className="lg:w-1/2 lg:ml-8">
+        <h1 className="font-sans font-semibold text-4xl mt-12 lg:text-6xl">
           Hi, I'm Tom 👋
         </h1>
         <p className="mt-2 text-gray-600 text-base font-light">

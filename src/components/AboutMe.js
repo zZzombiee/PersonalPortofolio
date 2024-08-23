@@ -16,30 +16,33 @@ const AboutMe = () => {
   return (
     <div className="bg-gray-50 p-4 pb-16">
       <Button buttonText="About me" />
-      <div className="xl:flex">
-        <div className="xl:w-1/2">
+      <div className="lg:flex">
+        <div className="lg:w-1/2">
           <img
             src="image2.jpeg"
-            className="h-80 w-64 m-auto mt-16 xl:w-80 xl:h-96 xl:ml-8"
+            className="h-[360px] w-[280px] m-auto mt-16 lg:w-[400px] lg:h-[480px] lg:ml-8 object-cover"
           />
         </div>
-        <div className="xl:w-1/2 xl:pr-8">
+        <div className="lg:w-1/2 lg:pr-8">
           <h1 className="font-sans font-semibold text-2xl mt-12 ml:text-3xl">
             Curious about me? Here you have it:
           </h1>
-          {AboutMeTexts.map((AboutMeText) => {
+          {AboutMeTexts.map((AboutMeText, index) => {
             return (
-              <p className="mt-4 text-gray-600 text-base font-light">
+              <p
+                className="mt-4 text-gray-600 text-base font-light"
+                key={index}
+              >
                 {AboutMeText}
               </p>
             );
           })}
-          <div className="flex mt-4 flex-wrap justify-between xl:justify-normal">
-            {listTexts.map((listText) => {
+          <div className="flex mt-4 flex-wrap justify-between lg:justify-normal">
+            {listTexts.map((listText, index) => {
               return (
-                <div className="flex gap-2 mt-2 ">
+                <div className="flex gap-2 mt-2 " key={index}>
                   <p className="text-base">•</p>
-                  <p className="xl:w-64 w-36  text-gray-600 font-light">
+                  <p className="lg:w-64 w-36  text-gray-600 font-light">
                     {listText}
                   </p>
                 </div>
