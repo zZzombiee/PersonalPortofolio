@@ -29,9 +29,9 @@ const GetInTouch = () => {
           You may also find me on these platforms!
         </p>
         <div className="flex justify-center">
-          <img src="icon-button-Cat.svg" />
-          <img src="icon-button-Bird.svg" />
-          <img src="icon-button-Figma.svg" />
+          <img src="Icon-Button-Cat.svg" />
+          <img src="Icon-Button-Bird.svg" />
+          <img src="Icon-Button-Figma.svg" />
         </div>
       </div>
     </div>
