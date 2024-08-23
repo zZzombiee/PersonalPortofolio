@@ -25,7 +25,7 @@ const Skills = () => {
     <div>
       <Button buttonText="Skills" />
       <Title title="The skills, tools and technologies I am really good at:" />
-      <div className="grid grid-cols-3 place-content-center mb-16">
+      <div className="grid grid-cols-3 place-content-center mb-16 xl:grid-cols-8 xl:mt-12">
         {iconDatas.map((icondata) => {
           return (
             <div className="flex flex-col items-center mb-4 gap-2 h-24">

@@ -12,50 +12,39 @@ const buttonTexts = [
   "Storybook",
   "Git",
 ];
-const projectTexts = [
-  {
-    img: "ProjectUBcab.png",
-    title: "UBCab",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-  },
-  {
-    img: "MentorHub.png",
-    title: "Mentorhub",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-  },
-  {
-    img: "Itoim.png",
-    title: "iToim",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-  },
-];
 
-const Project = () => {
-  return (
-    <div className="shadow-md rounded-lg ">
-      {projectTexts.map((projectText) => {
-        return (
-          <>
-            <img src={projectText.img} className="p-8 bg-gray-50" />
-            <div className="p-8">
-              <p className="text-lg font-semibold pb-6">{projectText.title}</p>
-              <p className="pb-6">{projectText.text} </p>
-              <div className="flex flex-wrap gap-2 pb-6">
-                {buttonTexts.map((buttonText) => {
-                  return (
-                    <div>
-                      <TagButton buttonText={buttonText} />
-                    </div>
-                  );
-                })}
-              </div>
-              <img src="ShareIcon.svg" />
-            </div>
-          </>
-        );
-      })}
-    </div>
-  );
+const Project = (key, img, title, text) => {
+  return console.log(title);
+  //   <div className="xl:mr-16 xl:ml-16">
+  //     <div className="shadow-md rounded-xl mb-6 xl:flex ">
+  //       <div className="xl:w-1/2">
+  //         <img
+  //           key={key}
+  //           src={img}
+  //           className="p-8 bg-gray-50 xl:w-[544px] xl:h-[448px]"
+  //         />
+  //       </div>
+  //       <div className="p-8 xl:w-1/2">
+  //         <p className="text-lg font-semibold pb-6 " key={key}>
+  //           {title}
+  //         </p>
+  //         <p className="pb-6" key={key}>
+  //           {text}
+  //         </p>
+  //         <div className="flex flex-wrap gap-2 pb-6">
+  //           {buttonTexts.map((buttonText, index) => {
+  //             return (
+  //               <div key={index}>
+  //                 <TagButton buttonText={buttonText} />
+  //               </div>
+  //             );
+  //           })}
+  //         </div>
+  //         <img src="ShareIcon.svg" />
+  //       </div>
+  //     </div>
+  //   </div>
+  // );
 };
 
 export default Project;

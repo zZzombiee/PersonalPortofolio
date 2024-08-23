@@ -16,32 +16,43 @@ const AboutMe = () => {
   return (
     <div className="bg-gray-50 p-4 pb-16">
       <Button buttonText="About me" />
-      <img src="image2.jpeg" className="h-80 w-64 m-auto mt-16 " />
-      <h1 className="font-sans font-semibold text-4xl mt-12">
-        Curious about me? Here you have it:
-      </h1>
-      {AboutMeTexts.map((AboutMeText) => {
-        return (
+      <div className="xl:flex">
+        <div className="xl:w-1/2">
+          <img
+            src="image2.jpeg"
+            className="h-80 w-64 m-auto mt-16 xl:w-80 xl:h-96 xl:ml-8"
+          />
+        </div>
+        <div className="xl:w-1/2 xl:pr-8">
+          <h1 className="font-sans font-semibold text-2xl mt-12 ml:text-3xl">
+            Curious about me? Here you have it:
+          </h1>
+          {AboutMeTexts.map((AboutMeText) => {
+            return (
+              <p className="mt-4 text-gray-600 text-base font-light">
+                {AboutMeText}
+              </p>
+            );
+          })}
+          <div className="flex mt-4 flex-wrap justify-between xl:justify-normal">
+            {listTexts.map((listText) => {
+              return (
+                <div className="flex gap-2 mt-2 ">
+                  <p className="text-base">•</p>
+                  <p className="xl:w-64 w-36  text-gray-600 font-light">
+                    {listText}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
           <p className="mt-4 text-gray-600 text-base font-light">
-            {AboutMeText}
+            {
+              " One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉"
+            }
           </p>
-        );
-      })}
-      <div className="flex mt-4 flex-wrap justify-between">
-        {listTexts.map((listText) => {
-          return (
-            <div className="flex gap-2 mt-2 ">
-              <p className="text-base">•</p>
-              <p className=" w-36  text-gray-600 font-light">{listText}</p>
-            </div>
-          );
-        })}
+        </div>
       </div>
-      <p className="mt-4 text-gray-600 text-base font-light">
-        {
-          " One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉"
-        }
-      </p>
     </div>
   );
 };

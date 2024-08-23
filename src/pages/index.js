@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 const PersonalPortfolio = () => {
   return (
-    <div>
+    <div className="xl:max-w-7xl m-auto">
       <PortfolioHeader />
       <Nabar />
       <AboutMe />
