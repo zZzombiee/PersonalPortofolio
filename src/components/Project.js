@@ -37,7 +37,7 @@ const Project = (props) => {
                 );
               })}
             </div>
-            <img src="ShareIcon.svg" />
+            <img src="Share.svg" />
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@ const Project = (props) => {
                 );
               })}
             </div>
-            <img src="ShareIcon.svg" />
+            <img src="Share.svg" />
           </div>
         </div>
       </div>
