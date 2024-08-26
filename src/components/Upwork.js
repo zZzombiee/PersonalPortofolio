@@ -32,21 +32,21 @@ const Upwork = () => {
         return (
           <div
             key={index}
-            className="m-4 p-8 rounded-lg bg-white shadow-md lg:flex lg:justify-between lg:w-3/4 lg:m-auto lg:mb-12"
+            className="m-4 p-8 rounded-lg bg-white shadow-md lg:flex lg:justify-between lg:w-3/4 lg:m-auto lg:mb-12 dark:bg-gray-800"
           >
             <div className="lg:flex lg:items-start lg:w-1/3">
               <img src="UpworkIcon.svg" className="mb-4" />
             </div>
             <div className="lg:order-1 lg:w-1/3 lg:flex lg:justify-end">
-              <p className="mb-4 font-normal text-base text-gray-700 ">
+              <p className="mb-4 font-normal text-base text-gray-700 dark:text-gray-200">
                 {listText.date}
               </p>
             </div>
             <div className="lg:w-6/12">
-              <p className="mb-4 font-semibold text-lg text-gray-900">
+              <p className="mb-4 font-semibold text-lg text-gray-900 dark:text-gray-50">
                 {listText.title}
               </p>
-              <ul className="font-normal text-base text-gray-600">
+              <ul className="font-normal text-base text-gray-600 dark:text-gray-200">
                 <div className="flex gap-2">
                   <p className="text-base pl-2">•</p>
                   <li>{listText.list1}</li>

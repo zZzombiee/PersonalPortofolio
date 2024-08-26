@@ -14,7 +14,7 @@ const listTexts = [
 
 const AboutMe = () => {
   return (
-    <div className="bg-gray-50 p-4 pb-16">
+    <div className="bg-gray-50 p-4 pb-16 dark:bg-gray-900">
       <Button buttonText="About me" />
       <div className="lg:flex">
         <div className="lg:w-1/2">
@@ -30,7 +30,7 @@ const AboutMe = () => {
           {AboutMeTexts.map((AboutMeText, index) => {
             return (
               <p
-                className="mt-4 text-gray-600 text-base font-light"
+                className="mt-4 text-gray-600 text-base font-light dark:text-gray-200"
                 key={index}
               >
                 {AboutMeText}
@@ -42,14 +42,14 @@ const AboutMe = () => {
               return (
                 <div className="flex gap-2 mt-2 " key={index}>
                   <p className="text-base">•</p>
-                  <p className="lg:w-64 w-36  text-gray-600 font-light">
+                  <p className="lg:w-64 w-36  text-gray-600 font-light dark:text-gray-200">
                     {listText}
                   </p>
                 </div>
               );
             })}
           </div>
-          <p className="mt-4 text-gray-600 text-base font-light">
+          <p className="mt-4 text-gray-600 text-base font-light dark:text-gray-200">
             {
               " One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉"
             }

@@ -10,7 +10,7 @@ const iconDatas = [
   { icon: "ExpressIcon.svg", name: "Express.js" },
   { icon: "NestIcon.svg", name: "Nest.js" },
   { icon: "Sockedicon.svg", name: "Socked.io" },
-  { icon: "PostgresqlIcon.jpg", name: "PostgreSQL" },
+  { icon: "PostgresqlIcon.svg", name: "PostgreSQL" },
   { icon: "MongodbIcon.svg", name: "MongoDB" },
   { icon: "SassIcon.svg", name: "Sass/Scss" },
   { icon: "TailwindcssIcon.svg", name: "Tailwindcss" },
@@ -33,14 +33,12 @@ const Skills = () => {
               key={index}
             >
               <img src={icondata.icon} />
-              <p className="text-gray-600 text-base font-normal">
+              <p className="text-gray-600 text-base font-normal dark:text-gray-200">
                 {icondata.name}
               </p>
             </div>
           );
         })}
-        {/* <img src={icons[0].icon} />
-      <p>{icons[0].name}</p> */}
       </div>
     </div>
   );

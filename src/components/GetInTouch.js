@@ -11,21 +11,21 @@ const GetInTouch = () => {
       <div className="flex flex-col gap-2 pb-6">
         <div className="flex gap-4 justify-center">
           <img src="MailIcon.svg" />
-          <p className="text-lg text-gray-900 font-semibold lg:text-4xl">
+          <p className="text-lg text-gray-900 font-semibold lg:text-4xl dark:text-gray-50">
             tom@pinecone.mn
           </p>
           <img src="ShareIcon1.svg" />
         </div>
         <div className="flex gap-4 justify-center">
           <img src="PhoneIcon.svg" />
-          <p className="text-lg text-gray-900 font-semibold lg:text-4xl">
+          <p className="text-lg text-gray-900 font-semibold lg:text-4xl dark:text-gray-50">
             +976 88112233
           </p>
           <img src="ShareIcon1.svg" />
         </div>
       </div>
       <div className="flex flex-col gap-2">
-        <p className=" flex justify-center text-base text-gray-600">
+        <p className=" flex justify-center text-base text-gray-600 dark:text-gray-50">
           You may also find me on these platforms!
         </p>
         <div className="flex justify-center">
