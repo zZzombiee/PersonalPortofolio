@@ -1,4 +1,7 @@
 import Location from "./iconsSVG/Location";
+import Cat from "./iconsSVG/Cat";
+import Bird from "./iconsSVG/Bird";
+import Figma from "./iconsSVG/Figma";
 
 const Nabar = () => {
   return (
@@ -30,9 +33,12 @@ const Nabar = () => {
           <p className="">Available for new projects</p>
         </div>
         <div className="flex pb-16 ">
-          <img src="Icon-Button-Cat.svg" />
-          <img src="Icon-Button-Bird.svg" />
-          <img src="Icon-Button-Figma.svg" />
+          <Cat color="#4B5563" className="dark:hidden" />
+          <Cat color="#D1D5DB" className="dark:block hidden" />
+          <Bird color="#4B5563" className="dark:hidden" />
+          <Bird color="#D1D5DB" className="dark:block hidden" />
+          <Figma color="#4B5563" className="dark:hidden" />
+          <Figma color="#D1D5DB" className="dark:block hidden" />
         </div>
       </div>
     </div>

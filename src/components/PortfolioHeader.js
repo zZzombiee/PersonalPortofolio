@@ -1,5 +1,6 @@
 import { Rubik } from "next/font/google";
 import BurgerMenu from "./iconsSVG/BurgerMenu";
+import Sun from "./iconsSVG/Sun";
 
 const darkMode = () => {
   if (document.documentElement.classList.contains("dark")) {
@@ -25,7 +26,9 @@ const PortfolioHeader = () => {
         </p>
         <p className="text-base text-gray-600 dark:text-gray-50 ">Contact</p>
         <div className="border border-solid w-px h-6 border-gray-100"></div>
-        <img src="SunIcon.svg" onClick={darkMode} />
+        <button onClick={darkMode}>
+          <Sun />
+        </button>
         <button className="bg-gray-900 text-gray-50 rounded-xl text-base pr-5 pl-5 pt-1 pb-1  dark:text-gray-600  dark:bg-gray-50  ">
           Download CV
         </button>

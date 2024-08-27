@@ -1,5 +1,11 @@
 import Button from "./Button";
 import Title from "./Title";
+import Cat from "./iconsSVG/Cat";
+import Figma from "./iconsSVG/Figma";
+import Bird from "./iconsSVG/Bird";
+import ShareIcon from "./iconsSVG/ShareIcon";
+import Mail from "./iconsSVG/Mail";
+import Phone from "./iconsSVG/Phone";
 
 const GetInTouch = () => {
   return (
@@ -10,18 +16,26 @@ const GetInTouch = () => {
       </div>
       <div className="flex flex-col gap-2 pb-6">
         <div className="flex gap-4 justify-center">
-          <img src="MailIcon.svg" />
+          <div className="flex justify-center items-center">
+            <Mail />
+          </div>
           <p className="text-lg text-gray-900 font-semibold lg:text-4xl dark:text-gray-50">
             tom@pinecone.mn
           </p>
-          <img src="ShareIcon1.svg" />
+          <div className="flex justify-center items-center">
+            <ShareIcon />
+          </div>
         </div>
         <div className="flex gap-4 justify-center">
-          <img src="PhoneIcon.svg" />
+          <div className="flex justify-center items-center">
+            <Phone />
+          </div>
           <p className="text-lg text-gray-900 font-semibold lg:text-4xl dark:text-gray-50">
             +976 88112233
           </p>
-          <img src="ShareIcon1.svg" />
+          <div className="flex justify-center items-center">
+            <ShareIcon />
+          </div>
         </div>
       </div>
       <div className="flex flex-col gap-2">
@@ -29,9 +43,12 @@ const GetInTouch = () => {
           You may also find me on these platforms!
         </p>
         <div className="flex justify-center">
-          <img src="Icon-Button-Cat.svg" />
-          <img src="Icon-Button-Bird.svg" />
-          <img src="Icon-Button-Figma.svg" />
+          <Cat color="#4B5563" className="dark:hidden" />
+          <Cat color="#D1D5DB" className="dark:block hidden" />
+          <Bird color="#4B5563" className="dark:hidden" />
+          <Bird color="#D1D5DB" className="dark:block hidden" />
+          <Figma color="#4B5563" className="dark:hidden" />
+          <Figma color="#D1D5DB" className="dark:block hidden" />
         </div>
       </div>
     </div>

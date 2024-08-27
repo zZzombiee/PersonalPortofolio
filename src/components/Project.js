@@ -1,4 +1,5 @@
 import TagButton from "./TagButton";
+import Share from "./iconsSVG/Share";
 
 const buttonTexts = [
   "React",
@@ -37,7 +38,7 @@ const Project = (props) => {
                 );
               })}
             </div>
-            <img src="Share.svg" />
+            <Share />
           </div>
         </div>
       </div>
@@ -64,7 +65,7 @@ const Project = (props) => {
                 );
               })}
             </div>
-            <img src="Share.svg" />
+            <Share />
           </div>
         </div>
       </div>
