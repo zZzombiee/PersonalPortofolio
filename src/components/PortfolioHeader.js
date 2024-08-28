@@ -11,13 +11,18 @@ const darkMode = () => {
 };
 
 const rubik = Rubik({
-  weight: "700",
+  weight: "900",
   subsets: ["latin"],
 });
 const PortfolioHeader = () => {
   return (
     <div className="flex justify-between items-center m-4 xl:pl-8 xl:pr-8 pt-4">
-      <h1 className="leading-9	font-bold text-3xl ">TOM</h1>
+      <h1
+        className="leading-9	font-bold text-3xl tracking-tight"
+        style={rubik.style}
+      >
+        TOM
+      </h1>
       <div className="hidden lg:flex gap-6 justify-center items-center">
         <p className="text-base text-gray-600 dark:text-gray-50 ">About</p>
         <p className="text-base text-gray-600 dark:text-gray-50 ">Work</p>
@@ -33,9 +38,8 @@ const PortfolioHeader = () => {
           Download CV
         </button>
       </div>
-      <div className="w-6 h-6 lg:hidden ">
-        <BurgerMenu color="black" className="dark:hidden" />
-        <BurgerMenu color="white" className="dark:block hidden" />
+      <div className="w-6 h-6 lg:hidden" onClick={console.log()}>
+        <BurgerMenu className="dark:hidden" />
       </div>
     </div>
   );
