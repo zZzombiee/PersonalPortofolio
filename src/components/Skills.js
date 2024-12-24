@@ -48,7 +48,6 @@ const Skills = () => {
               className="flex flex-col items-center mb-4 gap-2 h-24"
               key={index}
             >
-              {/* <img src={icondata.icon} /> */}
               {icondata.icon}
               <p className="text-gray-600 text-base font-normal dark:text-gray-200">
                 {icondata.name}
